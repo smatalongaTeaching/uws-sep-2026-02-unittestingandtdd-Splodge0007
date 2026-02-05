@@ -11,20 +11,20 @@ public class StringUtilsTest {
     
     @Test
     public void testCountVowelsWithNoVowels() {
-        // Write a test for a string with no vowels
-        // Example: "xyz"
+        StringUtils utils = new StringUtils();
+        assertEquals(0, utils.countVowels("xyz"));
     }
     
     @Test
     public void testCountVowelsWithMixedCase() {
-        // Write a test for a string with mixed case vowels
-        // Example: "Hello"
+        StringUtils utils = new StringUtils();
+        assertEquals(2, utils.countVowels("Hello"));
     }
     
     @Test
     public void testCountVowelsWithMultipleVowels() {
-        // Write a test for a string with multiple vowels
-        // Example: "beautiful"
+        StringUtils utils = new StringUtils();
+        assertEquals(5, utils.countVowels("beautiful"));
     }
 }
 
